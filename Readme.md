@@ -60,5 +60,7 @@ Nodemon automatically restarts your Node.js application when changes are made.
 Template engines help generate dynamic HTML pages with variables and logic. Popular template engines include:
 
 Handlebars.js
+
 EJS (Embedded JavaScript)
+
 Pug
