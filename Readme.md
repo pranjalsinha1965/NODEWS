@@ -17,10 +17,13 @@ Creating a web application from scratch is like building a car entirely from raw
 
 Here’s a list of some widely-used frameworks:
 
-1. **Ruby on Rails (Ruby)**  
-2. **Django (Python)**   
-3. **Meteor (JavaScript)**  
-4. **Express (JavaScript)**  
+1. **Ruby on Rails (Ruby)**
+
+3. **Django (Python)**
+
+5. **Meteor (JavaScript)**
+
+7. **Express (JavaScript)**  
 
 ---
 
