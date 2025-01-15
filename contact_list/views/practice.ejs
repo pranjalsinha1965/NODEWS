@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Playground</h1>
+
+    <!-- Dynamic List -->
+    <ul>
+        <% for (let i = 1; i <= 5; i++) { %>
+            <li><%= i %></li>
+        <% } %>
+    </ul>
+
+    <!-- Conditional Rendering -->
+    <% if (true) { %>
+        <h1>It's True!</h1>
+    <% } else { %>
+        <p>It's False :(</p>
+    <% } %>
+</body>
+</html>

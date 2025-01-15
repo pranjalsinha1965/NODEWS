@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header>
+        <h1 id="page-heading">
+            <i class="fas fa-address-book" aria-hidden="true"></i>
+            My Contacts List
+        </h1>
+    </header>
+
+    <!-- Contact List Section -->
+    <main>
+        <section id="contact-list-container">
+            <ul id="contact-list">
+                <% if (contact_list.length > 0) { %>
+                    <% for (let contact of contact_list) { %>
+                        <li class="contact-item">
+                            <span class="contact-name"><%= contact.name %></span>
+                            <span class="contact-phone"><%= contact.phone %></span>
+                            <!-- Delete Button -->
+                            <div class="delete-button">
+                                <a href="/delete-contact/<%= contact.phone %>">
+                                    <i class="fas fa-window-close"></i> 
+                                </a>
+                            </div>
+                        </li>
+                    <% } %>
+                <% } else { %>
+                    <li>No contacts available.</li>
+                <% } %>
+            </ul>
+        </section>
+
+        <!-- Add Contact Form -->
+        <section id="add-contact-section">
+            <form action="/create-contact" method="POST" id="add-contact-form">
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="number" name="phone" placeholder="Enter Phone" required>
+                <button type="submit">
+                    <i class="fas fa-plus-circle"></i> Add
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+
+</html>
