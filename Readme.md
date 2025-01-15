@@ -1,52 +1,61 @@
-### Web Frameworks: setting up a project
+# Web Frameworks: Setting Up a Project
 
-### Q.1 What are frameworks ? 
-Let`s take a simple example of a project and all. 
+## What Are Frameworks?
 
-Frameworks are, in short, libraries that help you develop your application faster and smarter! Nowadays, the number of Web Frameworks has increased greatly. 
+Frameworks are collections of pre-written code, tools, and libraries that streamline the development of applications. They allow developers to:
 
-Table of Content
+- Build applications faster and smarter.
+- Focus on application logic without repetitive tasks.
+- Leverage pre-built components for efficiency.
 
-Top 10 Frameworks for Web Applications: 
-Ruby(Ruby is the language) on Rails(it`s name of the web framework), Django, Angular(Also, know as Angular JS), ASP.NET, METEOR, Laravel, Express, Spring, PLAY, CodeIgniter. 
+### Example
+Creating a web application from scratch is like building a car entirely from raw materials. A framework provides you with a ready-to-assemble kit that includes the essential parts, saving time and effort.
 
-### What are MVCs(Models, Views and Controllers) ? 
+---
 
-The MVC (Model-View-Controller) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development frameworks to create scalable and extensible projects. 
+## Top 10 Frameworks for Web Applications
 
-The Model component corresponds to all the data-related logic that the user works with. It is the representation of information or data that you want to display to user. Model gets all these data from database and data can be read, updated and deleted.
+Here’s a list of some widely-used frameworks:
 
-It is all the front end code via which the website is presented in front of the user. It includes all the CSS, HTML and JavaScript. Any ajax is called in view. Using view, the user interacts with the website.
+1. **Ruby on Rails (Ruby)**  
+2. **Django (Python)**   
+3. **Meteor (JavaScript)**  
+4. **Express (JavaScript)**  
 
-For example, if a user wants to see their profile, view will send the request to controller, in controller the code to read the profile will execute and send a request to model. After this model will return the requested data by controller will display the data via view to the user.
+---
 
-These are some extra links to read. (Some concepts might be difficult
-to understand right now, but don’t worry. These are just for giving
-you brief idea of other frameworks and how they work)
-MVC Real Life Example
-https://medium.freecodecamp.org/simplified-explanation-to-mvc-5d307796df30
+## What Is MVC (Model-View-Controller)?
 
-MVC MVP and MVVM Frameworks
-https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad
+MVC is an architectural pattern that separates an application into three components, ensuring scalability and maintainability:
 
-Setting up node.js server of our MVC: 
-1. Setting up the nodemon engine 
-2. Template Engines and it`s examples: 
-(i) Handlebarjs :
-(i) Embedded JS : 
-(i) Pug
+1. **Model**: Handles all data-related logic, including database interactions like creating, reading, updating, and deleting records.
+2. **View**: The user interface that displays data and receives user inputs. It includes HTML, CSS, and JavaScript.
+3. **Controller**: The intermediary between the Model and View. It processes user inputs, updates the Model, and renders the View.
 
-Note: 
-1. Install EJS 
-2. app.sef : 
-(i) view engine 
-(ii) view path 
+### Example Workflow
+1. The user requests their profile by clicking "View Profile."
+2. The **View** sends the request to the **Controller**.
+3. The **Controller** retrieves data from the **Model**.
+4. The **Model** fetches data from the database and returns it to the **Controller**.
+5. The **Controller** renders the **View**, displaying the profile data to the user.
 
-3. views directory + file 
+---
 
-4. render + res.render
+## Setting Up a Node.js Server for MVC
 
-5. Library inclusion: 
-syntax : 
-(i) brackets
-(ii) " "
+### 1. Setting Up the Nodemon Engine
+Nodemon automatically restarts your Node.js application when changes are made.
+
+- Install Nodemon:
+  ```bash
+  npm install -g nodemon
+  nodemon app.js
+  npm install ejs
+  ```
+
+### 2. Template Engines
+Template engines help generate dynamic HTML pages with variables and logic. Popular template engines include:
+
+Handlebars.js
+EJS (Embedded JavaScript)
+Pug
