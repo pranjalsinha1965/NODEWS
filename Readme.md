@@ -100,4 +100,7 @@ Steps:
 3. MONGOOSE (INSTALL)
 4. SETUP CONFIG
 5. RUN SERVER & TEST
+
+Note: 
+MongoDB can be downloaded with the help of MongoDB Community Server X64 bit. When it comes to package managers and all we can use NPM for NODE. For MongoDB we can use HOMEBREW on MAC. Whereas WSL  and MongoSh is for windows and all. Robo3T can be downloaded with the help of robo3T-1.2.1-darwin-X86-64-3L50a65.dmg.
    
